@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Home</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+
+	  <!-- about session start -->
+	<section>
+		
+	
+	
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="about-img" src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hey there! I'm Raja Bomma, a recent graduate in Computer Science from Chandigarh
+                        University.During these days, I developed a project called SmartContactManager using Spring
+                        Boot, and guess what? I didn't stop there - I even deployed it! Yep, I'm that person who loves
+                        turning ideas into reality.</p><br>
+                    <p>When it comes to coding, I've learnt Data Structures and Algorithms using Java. Front-end
+                        technology like HTML, CSS, Bootstrap, and JavaScript.and in backedn i have learnt spring boot.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span>: Java</li>
+                            <li><span>Web Technologies</span>: HTML, CSS, Bootstrap, JavaScript</li>
+                            <li><span>Frameworks</span>: Spring Boot</li>
+                            <li><span>DataBase</span>: Mysql</li>
+                            <li><span>Data Structures and Algorithms</span>: in java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Smart Contact Manager</span></li>
+                            <li><span>Role </span>: Backend Developer</li>
+                            <li><span>Duration </span>: [12/23 - 17/24]</li>
+                            <li><span>Description</span>: SmartContactManager is a dynamic and user-friendly web
+                                application with efficiency and ease.The primary goal of this project is to empower
+                                users to effortlessly organize their contacts by providing a secure registration and
+                                login system.</li>
+                            <li><span>Key feature </span> <br>
+                                1. User Authentication<br>
+                                2. Contact Operations<br>
+                                3. User-Friendly Interface: <br>
+                                4. CRUD Operations<br>
+                                5. Data Security<br>
+                            </li>
+                            <li><a href="https://smartcontact.up.railway.app/"><span>Click to know more</span></a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>Chandigarh University</span></li>
+                            <li><span>Graduation Year </span>: 2023</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    <!-- about session completed -->
+    	<script src="/js/script.js"></script>
+
+	
+
+</body>
+
+</html>

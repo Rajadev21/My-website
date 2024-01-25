@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Home</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+
+	<section>
+   		
+   		  <!-- portfolio start -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Front-end technology</h3>
+                        <p>used HTML, CSS, Bootstrap, and JavaScript to create a visually beautiful and user-friendly
+                            interface for an engaging web experience. To explore, click the links below.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Java Backend(spring boot)</h3>
+                        <p>Using Spring Boot, an effective web application was developed with a priority on user
+                            authentication, secure data handling, and efficient development. To explore, click the link
+                            below.</p>
+                        <a href="https://smartcontact.up.railway.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>DSA with Java</h3>
+                        <p>used Java to apply problem-solving techniques in Data Structures and Algorithms problems. To
+                            explore, click the links below.
+                        </p>
+                        <a href="https://drive.google.com/file/d/10LwCd0VA5BCvUv0TV-6eBzZP-qKno3Sk/view?usp=drive_link"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio end -->
+   		
+    </section>
+    	<script src="/js/script.js"></script>
+
+</body>
+
+</html>
