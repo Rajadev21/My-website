@@ -18,7 +18,7 @@ public class MainController {
     private JavaMailSender javaMailSender;
  
 	
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String home(Model model) {
 		
 		model.addAttribute("title","Home");
